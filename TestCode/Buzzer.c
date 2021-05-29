@@ -4,17 +4,9 @@
 //Pin 11 on Raspberry Pi corresponds to BCM GPIO 17 and wiringPi pin 0
 #define BeepPin 0
 
+//Frequency
 #define cH 523
-#define cHS 554
-#define dH 587
-#define dHS 622
-#define eH 659
 #define fH 698
-#define fHS 740
-#define gH 784
-#define gHS 830
-#define aH 880
-#define aHS 910
 #define bH 933
  
 //This function generates the square wave that makes the piezo speaker sound at a determinated frequency.
@@ -73,4 +65,5 @@ int main(void)
  
   return 0;
 }
+
 

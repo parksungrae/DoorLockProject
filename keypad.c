@@ -35,6 +35,7 @@ int findLowRow()
    for (int r = 0; r < ROWS; r++)
    {
       if (digitalRead(rowPins[r]) == LOW)
+        
          return r;
    }
 

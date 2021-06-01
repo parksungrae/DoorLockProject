@@ -59,6 +59,8 @@ int main(void)
  
   //Prepare GPIO0
   pinMode(BeepPin, OUTPUT);
+
+  
   //Play the Imperial March
   openBuzzer();
   errorBuzzer();

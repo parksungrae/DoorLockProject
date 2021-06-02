@@ -97,52 +97,102 @@ void write_num(char num){
     for(i=0; i<8; i++){
       MAX7219_WRITE(i+1, one[i]);
     }
+    delay(1000);
+    for(i=0; i<8; i++){
+      MAX7219_WRITE(i+1, allOff[i]);
+    }
     break;
+
     case "2":
     for(i=0; i<8; i++){
       MAX7219_WRITE(i+1, two[i]);
     }
+    delay(1000);
+    for(i=0; i<8; i++){
+      MAX7219_WRITE(i+1, allOff[i]);
+    }
     break;
+
     case "3":
     for(i=0; i<8; i++){
       MAX7219_WRITE(i+1, three[i]);
     }
+    delay(1000);
+    for(i=0; i<8; i++){
+      MAX7219_WRITE(i+1, allOff[i]);
+    }
     break;
+
     case "4":
     for(i=0; i<8; i++){
       MAX7219_WRITE(i+1, four[i]);
     }
+    delay(1000);
+    for(i=0; i<8; i++){
+      MAX7219_WRITE(i+1, allOff[i]);
+    }
     break;
+
     case "5":
     for(i=0; i<8; i++){
       MAX7219_WRITE(i+1, five[i]);
     }
+    delay(1000);
+    for(i=0; i<8; i++){
+      MAX7219_WRITE(i+1, allOff[i]);
+    }
     break;
+
     case "6":
     for(i=0; i<8; i++){
       MAX7219_WRITE(i+1, six[i]);
     }
+    delay(1000);
+    for(i=0; i<8; i++){
+      MAX7219_WRITE(i+1, allOff[i]);
+    }
     break;
+
     case "7":
     for(i=0; i<8; i++){
       MAX7219_WRITE(i+1, seven[i]);
     }
+    delay(1000);
+    for(i=0; i<8; i++){
+      MAX7219_WRITE(i+1, allOff[i]);
+    }
     break;
+    
     case "8":
     for(i=0; i<8; i++){
       MAX7219_WRITE(i+1, eight[i]);
     }
+    delay(1000);
+    for(i=0; i<8; i++){
+      MAX7219_WRITE(i+1, allOff[i]);
+    }
     break;
+
     case "9":
     for(i=0; i<8; i++){
       MAX7219_WRITE(i+1, nine[i]);
     }
+    delay(1000);
+    for(i=0; i<8; i++){
+      MAX7219_WRITE(i+1, allOff[i]);
+    }
     break;
+
     case "0":
     for(i=0; i<8; i++){
       MAX7219_WRITE(i+1, zero[i]);
     }
+    delay(1000);
+    for(i=0; i<8; i++){
+      MAX7219_WRITE(i+1, allOff[i]);
+    }
     break;
+    
     default:
     break;
   }

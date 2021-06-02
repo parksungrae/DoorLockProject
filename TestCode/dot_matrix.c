@@ -27,7 +27,7 @@ const uint8_t three[] = {
     0x00, 0x7E, 0x02, 0x7E, 0x7E, 0x02, 0x7E, 0x00 // 3
 };
 const uint8_t four[] = {
-    0x0C, 0x3C, 0x6C, 0xCC, 0xFF, 0xFF, 0x0C, 0x0C //4
+    0x0C, 0x3C, 0x6C, 0xCC, 0xFF, 0xFF, 0x0C, 0x0C // 4
 };
 const uint8_t five[] = {
     0x7E, 0x7E, 0x60, 0x7E, 0x7E, 0x06, 0x7E, 0x7E // 5
@@ -43,6 +43,12 @@ const uint8_t eight[] = {
 };
 const uint8_t nine[] = {
     0xFF, 0xFF, 0xC3, 0xFF, 0xFF, 0x03, 0xFF, 0xFF // 9
+};
+const uint8_t success[] = {
+    0x7E, 0x81. 0x81, 0x81, 0x81, 0x81, 0x81, 0x7E // O
+};
+const uint8_t fail[] = {
+    0x81, 0x42, 0x24, 0x18, 0x18, 0x24, 0x42, 0x81 // X
 };
 uint8_t buf[8];
 void MAX7219_WRITE(uint8_t address, uint8_t data) {
@@ -67,19 +73,19 @@ void setup(void) {
  MAX7219_INIT();
 }
 int main(void) {
- int i, j;
- int k;
- printf("[Dot Matrix testing....]\n");
- if(wiringPiSetup() == -1)
- return 1;
- setup();
- for(i=0; i<8; i++){
- MAX7219_WRITE(i+1, image[i]);
- delay(1000);
- }
- for(i=0; i<8; i++){
- MAX7219_WRITE(i+1, allOff[i]);
- }
- delay(1000);
- return 0;
+    int i, j;
+    int k;
+    printf("[Dot Matrix testing....]\n");
+    if(wiringPiSetup() == -1)
+        return 1;
+    setup();
+    for(i=0; i<8; i++){
+        MAX7219_WRITE(i+1, one[i]);
+        delay(1000);
+    }
+    for(i=0; i<8; i++){
+        MAX7219_WRITE(i+1, allOff[i]);
+    }
+    delay(1000);
+    return 0;
 }

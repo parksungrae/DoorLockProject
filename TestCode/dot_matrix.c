@@ -73,8 +73,7 @@ void setup(void) {
  MAX7219_INIT();
 }
 int main(void) {
-    int i, j;
-    int k;
+    int i;
     printf("[Dot Matrix testing....]\n");
     if(wiringPiSetup() == -1)
         return 1;

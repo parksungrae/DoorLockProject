@@ -90,57 +90,55 @@ void setup(void) {
  MAX7219_INIT();
 }
 
-void write_num(char number){
+void write_num(char num){
   int i;
-  int num = (int)number;
-  printf("%d", num);
   switch (num){
-    case 1:
+    case "1":
     for(i=0; i<8; i++){
       MAX7219_WRITE(i+1, one[i]);
     }
     break;
-    case 2:
+    case "2":
     for(i=0; i<8; i++){
       MAX7219_WRITE(i+1, two[i]);
     }
     break;
-    case 3:
+    case "3":
     for(i=0; i<8; i++){
       MAX7219_WRITE(i+1, three[i]);
     }
     break;
-    case 4:
+    case "4":
     for(i=0; i<8; i++){
       MAX7219_WRITE(i+1, four[i]);
     }
     break;
-    case 5:
+    case "5":
     for(i=0; i<8; i++){
       MAX7219_WRITE(i+1, five[i]);
     }
     break;
-    case 6:
+    case "6":
     for(i=0; i<8; i++){
       MAX7219_WRITE(i+1, six[i]);
     }
     break;
-    case 7:
+    case "7":
     for(i=0; i<8; i++){
       MAX7219_WRITE(i+1, seven[i]);
     }
     break;
-    case 8:
+    case "8":
     for(i=0; i<8; i++){
       MAX7219_WRITE(i+1, eight[i]);
     }
     break;
-    case 9:
+    case "9":
     for(i=0; i<8; i++){
       MAX7219_WRITE(i+1, nine[i]);
     }
     break;
-    case 0:
+    case "0":
     for(i=0; i<8; i++){
       MAX7219_WRITE(i+1, zero[i]);
     }

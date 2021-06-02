@@ -351,7 +351,7 @@ int main ()
           cnt++;
       }
     }
-    delay(1000);
+    delay(300);
     if(cnt >=4) {
       if (x[0] == '1' && x[1] == '2' && x[2] == '3' && x[3] == '4') {
          printf("pressed: %c\n", x[0]);

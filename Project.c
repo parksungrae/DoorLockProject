@@ -93,7 +93,7 @@ void setup(void) {
 void write_num(char num){
   int i;
   switch (num){
-    case "1":
+    case '1':
     for(i=0; i<8; i++){
       MAX7219_WRITE(i+1, one[i]);
     }
@@ -103,7 +103,7 @@ void write_num(char num){
     }
     break;
 
-    case "2":
+    case '2':
     for(i=0; i<8; i++){
       MAX7219_WRITE(i+1, two[i]);
     }
@@ -113,7 +113,7 @@ void write_num(char num){
     }
     break;
 
-    case "3":
+    case '3':
     for(i=0; i<8; i++){
       MAX7219_WRITE(i+1, three[i]);
     }
@@ -123,7 +123,7 @@ void write_num(char num){
     }
     break;
 
-    case "4":
+    case '4':
     for(i=0; i<8; i++){
       MAX7219_WRITE(i+1, four[i]);
     }
@@ -133,7 +133,7 @@ void write_num(char num){
     }
     break;
 
-    case "5":
+    case '5':
     for(i=0; i<8; i++){
       MAX7219_WRITE(i+1, five[i]);
     }
@@ -143,7 +143,7 @@ void write_num(char num){
     }
     break;
 
-    case "6":
+    case '6':
     for(i=0; i<8; i++){
       MAX7219_WRITE(i+1, six[i]);
     }
@@ -153,7 +153,7 @@ void write_num(char num){
     }
     break;
 
-    case "7":
+    case '7':
     for(i=0; i<8; i++){
       MAX7219_WRITE(i+1, seven[i]);
     }
@@ -163,7 +163,7 @@ void write_num(char num){
     }
     break;
     
-    case "8":
+    case '8':
     for(i=0; i<8; i++){
       MAX7219_WRITE(i+1, eight[i]);
     }
@@ -173,7 +173,7 @@ void write_num(char num){
     }
     break;
 
-    case "9":
+    case '9':
     for(i=0; i<8; i++){
       MAX7219_WRITE(i+1, nine[i]);
     }
@@ -183,7 +183,7 @@ void write_num(char num){
     }
     break;
 
-    case "0":
+    case '0':
     for(i=0; i<8; i++){
       MAX7219_WRITE(i+1, zero[i]);
     }
@@ -351,6 +351,7 @@ int main ()
           cnt++;
       }
     }
+    delay(1000);
     if(cnt >=4) {
       if (x[0] == '1' && x[1] == '2' && x[2] == '3' && x[3] == '4') {
          printf("pressed: %c\n", x[0]);
